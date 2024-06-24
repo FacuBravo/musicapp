@@ -1,0 +1,8 @@
+<h2>Tus Likes</h2>
+<ul>
+    @for (song of songs; track song.id) {
+    <li>
+        <h6>{{ song.title }} - {{ song.band }}</h6>
+    </li>
+    }
+</ul>

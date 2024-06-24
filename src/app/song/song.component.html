@@ -1,0 +1,8 @@
+<div class="card" style="width: 180px;">
+    <img src="../assets/imgs/{{ song.img }}" class="card-img-top" alt="Img cancion">
+    <div class="card-body">
+        <h5 class="card-title fs-5">{{ song.title }}</h5>
+        <p class="card-text fs-6">{{ song.band }}</p>
+        <app-like-btn [(liked)]="song.liked" [song]="song"></app-like-btn>
+    </div>
+</div>

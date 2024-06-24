@@ -1,0 +1,17 @@
+<div class="row">
+    <div class="col-8" style="padding: 0;">
+        <div class="container w-75">
+            <div class="row">
+                @for (song of songs; track song.id) {
+                    <div class="col mb-4">
+                        <app-song [song]="song" [likedSongs]="likedSongs"></app-song>
+                    </div>
+                }
+            </div>
+        </div>
+    </div>
+
+    <div class="col-4" style="padding: 0;">
+        <app-likes></app-likes>
+    </div>
+</div>
